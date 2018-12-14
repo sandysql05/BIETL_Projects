@@ -1,0 +1,45 @@
+Anjaneya
+
+Anjaneya
+
+Azure Introduction
+Platform as a service (Paas): Azure will be used to run Azure SQL server /MySQL with out spinning the Visrtual Machine. 
+
+ 
+
+Infrastructure as a service (Iaas): Spinning a VM on azure and running the application as if in on premise server.
+ 
+Data Lakes:
+⦁	Massive scalable storage and storing in Native forms
+⦁	HDFS (Hadoop File System) Compatible
+⦁	High Throughput
+				
+Data Processing
+⦁	Azure SQL Data Warehouse
+⦁	Hadoop Insight HDInsight
+⦁	Azure Data Lake Analytics (U-SQL --> SQL + C#)
+⦁	Stream Analytics
+⦁	Machine Learning
+⦁	Data Factory: ETL Built for cloud to run series of transofrmations(Hadoop jobs, Custom Code Machine learning ).
+
+Networking
+⦁	Content Delivert Network CDN
+⦁	Traffic Manager
+⦁	Azure DNS
+⦁	Azure SQL Data Warehouse
+	
+Active Directory
+
+ 
+
+
+
+Azure Functions
+
+
+Content Delivert Network CDN
+⦁	Traffic Manager
+Azure DNS
+⦁	Massive scalable storage and storing in Native forms
+⦁	HDFS (Hadoop File System) Compatible
+⦁	High Throughput

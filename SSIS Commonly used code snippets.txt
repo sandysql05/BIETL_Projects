@@ -1,0 +1,10 @@
+ETL Errors Email Logging:
+
+	Body: 
+		"Machine Name: " + @[System::MachineName] + "\n Package Name: " + @[System::PackageName] + ".dtsx \n Source Name: " + @[System::SourceName] + "\n Error Desc: " + @[System::ErrorDescription] +   "\n Error Code: " +  (DT_WSTR,500) @[System::ErrorCode] +
+		"\n Package Executed at: " +(DT_WSTR, 400)  @[System::StartTime] + "\n  \n"
+	
+	subject:
+		"SSIS Data Load Error: " + @[System::PackageName] +".dtsx Load Failed on Server: " + @[System::MachineName] +" while processing: " + @[User::FacilityName] +" Facility"
+
+	

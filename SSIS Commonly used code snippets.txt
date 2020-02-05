@@ -9,4 +9,17 @@ ETL Errors Email Logging:
 
 
 Error Handling using Execute SQL task:
-"INSERT INTO PackageError VALUES ('"+ @[System::PackageID]+"','"+ @[System::MachineName]+"','"+ @[System::PackageName]+"','"+ @[System::TaskName]+"','"+(DT_WSTR,120) @[System::ErrorCode]+"','"+ REPLACE( @[System::ErrorDescription],"'","")+"',getdate())"
+	CREATE TABLE PackageError
+	(
+	 Pk_ID NVARCHAR(100),
+	 Machine_Name Nvarchar(200),
+	 Package_Name Nvarchar(200),
+	 Task_Name Nvarchar(200),
+	 Error_Code INT,
+	 Error_Description Nvarchar(Max),
+	 Dated Datetime
+	)	
+
+		"INSERT INTO PackageError VALUES ('"+ @[System::PackageID]+"','"+ @[System::MachineName]+"','"+ 
+		@[System::PackageName]+"','"+ @[System::TaskName]+"','"+(DT_WSTR,120) @[System::ErrorCode]+"','"+
+		REPLACE( @[System::ErrorDescription],"'","")+"',getdate())"

@@ -7,4 +7,6 @@ ETL Errors Email Logging:
 	subject:
 		"SSIS Data Load Error: " + @[System::PackageName] +".dtsx Load Failed on Server: " + @[System::MachineName] +" while processing: " + @[User::FacilityName] +" Facility"
 
-	
+
+Error Handling using Execute SQL task:
+"INSERT INTO PackageError VALUES ('"+ @[System::PackageID]+"','"+ @[System::MachineName]+"','"+ @[System::PackageName]+"','"+ @[System::TaskName]+"','"+(DT_WSTR,120) @[System::ErrorCode]+"','"+ REPLACE( @[System::ErrorDescription],"'","")+"',getdate())"

@@ -12,7 +12,7 @@ import datetime
 # logging.getLogger("msal").setLevel(logging.INFO)  # Optionally disable MSAL DEBUG logs
 
 config = json.load(open(sys.argv[1]))
-#config = json.load(open(r'C:\Users\sgondela\Documents\GitHub\Enterprise%20Data%20Management\Reporting\PowerBI\PowerBI Usage Metrics\DataExtract\parameters.json'))
+
 Base_Endpoint = "https://api.powerbi.com/v1.0/myorg/admin/"
 
 

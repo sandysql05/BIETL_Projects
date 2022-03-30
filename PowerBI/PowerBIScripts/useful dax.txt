@@ -1,0 +1,1 @@
+[Principal Name] = USERPRINCIPALNAME() && [Department] = "Case Management"
